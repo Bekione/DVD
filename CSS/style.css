@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 .container{
