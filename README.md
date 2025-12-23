@@ -1,4 +1,5 @@
 # DVD Bouncing Effect
 The famous bouncing DVD logo effect clone, now with two logos that collide and repel each other!
 
-![image](https://github.com/Bekione/DVD/assets/112067722/3e1d5f85-000c-4ae9-ab21-20c206a566b2)
+<img width="820" height="634" alt="image" src="https://github.com/user-attachments/assets/1377db5f-f35d-4f8f-8442-8735b39f594e" />
+
