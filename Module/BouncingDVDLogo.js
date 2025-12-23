@@ -45,19 +45,32 @@ export class BouncingDVDLogo {
     this.changeColor();
   }
 
-  move() {
+  update(containerWidth, containerHeight) {
     this.x += this.dx;
     this.y += this.dy;
 
-    if (this.x < 0 || this.x > this.container.clientWidth - this.width) {
+    if (this.x < 0) {
+      this.x = 0;
+      this.dx *= -1;
+      this.changeColor();
+    } else if (this.x > containerWidth - this.width) {
+      this.x = containerWidth - this.width;
       this.dx *= -1;
       this.changeColor();
     }
-    if (this.y < 0 || this.y > this.container.clientHeight - this.height) {
+
+    if (this.y < 0) {
+      this.y = 0;
+      this.dy *= -1;
+      this.changeColor();
+    } else if (this.y > containerHeight - this.height) {
+      this.y = containerHeight - this.height;
       this.dy *= -1;
       this.changeColor();
     }
+  }
 
+  draw() {
     this.DVDLogo.style.left = `${this.x}px`;
     this.DVDLogo.style.top = `${this.y}px`;
   }
